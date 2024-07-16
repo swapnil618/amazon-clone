@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flipkartproject |</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: sticky;
+
+    }
+
+    nav {
+      background-color: rgb(5, 9, 250);
+      color: rgb(247, 246, 246);
+      position: sticky;
+
+    }
+
+    nav ul {
+      width: 100%;
+      color: white;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: flex-end;
+      border: 1px solid black;
+      position: sticky;
+    }
+
+    nav li {
+      height: 50px;
+      text-shadow: 3px 3px 3px rgb(27, 2, 248);
+      align-items: center;
+      display: flex;
+      position: sticky;
+
+    }
+
+    nav a {
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      display: flex;
+      position: sticky;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    nav li:first-child {
+      margin-right: auto;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 50px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+
+    .icon img {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      /* display: block; */
+
+    }
+
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    .dropdown {
+      position: absolute;
+      display: none;
+      background-color: rgb(5, 9, 250);
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown ul {
+      display: none;
+      background-color: rgb(5, 9, 250);
+    }
+
+    .dropdown li {
+      text-shadow: 3px 3px 3px rgb(27, 2, 248);
+      display: inline-table;
+    }
+
+    .dropdown a {
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      display: flex;
+    }
+
+    .dropdown a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: inline-table;
+    }
+
+    marquee {
+      line-height: 40px;
+      font-size: 20px;
+      background-color: blue;
+    }
+
+    .item-container {
+
+      background-color: blue;
+    }
+
+
+    footer {
+      background-color: #212121;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+      color: rgb(23, 24, 24);
+    }
+
+    footer a {
+      text-decoration: none;
+      display: block;
+      margin: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: antiquewhite;
+
+
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding-top: 10;
+      margin: 10px;
+      text-align: center;
+      color: rgb(245, 229, 6);
+      font-weight: 600;
+
+    }
+
+    footer ul:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      color: white;
+      font-weight: 500;
+      padding-top: 70px;
+      text-align: center;
+    }
+
+    section {
+      background-color: #212121;
+      color: white;
+      font-size: larger;
+      display: flex;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    section img {
+      margin: 0 6px;
+
+
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <!-- nav bar starts -->
+  <nav>
+    <ul>
+      <li class="logo"><img src="flipkart-icon.webp" alt="flipkart logo" width="70px" height="50px"></li>
+      <li><a href="#">FlipkartPlus</a></li>
+      <li class="icon"><img src="house-solid.svg" alt="home logo" width="10px" height="10"></li>
+      <li><a href="">Home</a></li>
+      <li class="icon"><img src="cart-shopping-solid.svg" alt="home logo" width="10px" height="10px"></li>
+      <li>
+        <a href="footware.html">Products &#9662;</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="#">Footwear&#9661</a></li>
+
+          </ul>
+        </div>
+      </li>
+      <li class="icon"><img src="phone-solid.svg" alt="home logo" width="10px" height="10px"></li>
+      <li><a href="https://www.flipkart.com/helpcentre?otracker=${otracker}_navlinks">Contact Us</a></li>
+      <li class="icon"><img src="circle-user-solid.svg" alt="home logo" width="10px" height="10px"></li>
+      <li><a href="projlogin.html">Login</a></li>
+    </ul>
+
+
+
+
+  </nav>
+  <!-- nav bar ends -->
+
+
+  <!-- marquee starts -->
+
+  <marquee behavior="alternate" direction="right"><mark>END OF THE SEASON IS START FLAT 50% OFF ON HDFC Credit Card Grab
+      IT Now ! </mark></marquee>
+  <!-- marquee ends -->
+
+
+  <!-- footer starts here -->
+
+  <div class="item-container">
+    <div class="item">
+
+      <a
+        href="https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&otracker=nmenu_sub_Men_0_Sports+Shoes&p%5B%5D=facets.brand%255B%255D%3DNIKE">
+        <img src="flexfli2.png" alt="flex" width="1360px" height="400px"></a><br>
+      <a
+        href="https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&otracker=nmenu_sub_Men_0_Sports+Shoes&p%5B%5D=facets.brand%255B%255D%3DADIDAS"><img
+          src="flexfli3.jpg" alt="flex" width="1360px" height="400px"></a>
+      <a
+        href="https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&otracker=nmenu_sub_Men_0_Sports+Shoes&p%5B%5D=facets.brand%255B%255D%3DPUMA"><img
+          src="flexfli4.jpg" alt="flex" width="1360px" height="400px"></a>
+      <a
+        href="https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&otracker=nmenu_sub_Men_0_Sports+Shoes&p%5B%5D=facets.brand%255B%255D%3DREEBOK"><img
+          src="flexfli5.jpg" alt="flex" width="1360px" height="400px"></a>
+
+
+      <footer>
+        <div class="ABOUT">
+          <a href="">ABOUT</a><br>
+          <div class="ABOUT">
+            <ul>
+              <li><a href="https://corporate.flipkart.net/corporate-home">About Us</a></li>
+              <li><a href="https://www.flipkartcareers.com/?otracker=${otracker}_navlinks#!/">Careers</a></li>
+              <li><a href="https://stories.flipkart.com/">Flipkart stories</a></li>
+              <li><a href="https://stories.flipkart.com/category/top-stories/news/">Press</a></li>
+              <li><a href="https://www.flipkart.com/corporate-information">Corporate information</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="GROUP COMPANIES">
+          <a href="">GROUP COMPANIES</a><br>
+          <div class="GROUP COMPANIES">
+            <ul>
+              <li><a href="https://www.myntra.com/">Myntra</a></li>
+              <li><a href="https://www.cleartrip.com/">cleartrip</a></li>
+              <li><a href="https://www.shopsy.in/">Shopsy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <div class="HELP">
+          <a href="">HELP</a><br>
+          <div class="HELP">
+            <ul>
+              <li><a href="https://www.flipkart.com/pages/payments">Payments</a></li>
+              <li><a href="https://www.flipkart.com/pages/shipping">Shipping</a></li>
+              <li><a
+                  href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG">Cancellation
+                  & Returns</a></li>
+              <li><a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a>
+              </li>
+              <li><a href="https://seller.flipkart.com/page-not-found">Report Infringement</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="CONSUMER-POLICY">
+          <a href="">CONSUMER POLICY</a><br>
+          <div class="CONSUMER POLICY">
+            <ul>
+              <li><a href="https://www.flipkart.com/pages/returnpolicy?otracker=${otracker}_navlinks">Cancellation &
+                  Returns</a></li>
+              <li><a href="https://www.flipkart.com/pages/terms?otracker=${otracker}_navlinks">Terms of use</a></li>
+              <li><a href="https://www.flipkart.com/pages/paymentsecurity?otracker=${otracker}_navlinks">Security</a>
+              </li>
+              <li><a href="https://www.flipkart.com/pages/privacypolicy?otracker=${otracker}_navlinks">Privacy</a></li>
+              <li><a href="https://www.flipkart.com/sitemap?otracker=${otracker}_navlinks">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <a href="#">Mail us</a>
+        <p>Flipkart Internet Private Limited,Pune,411041,Maharastra,India.</p>
+
+      </footer>
+
+      <section>
+
+        <p> Copyright &copy; 2024 Flipkart Clone - All Rights Reserved.</p>
+        <a href="https://www.youtube.com/flipkart"><img src="youtubeicon.jpg" alt="instagram logo" width="35px"
+            height="33px"></a>
+        <a href="https://www.facebook.com/flipkart"><img src="facebook.png" alt="instagram logo" width="44px"
+            height="40px"></a>
+        <a href="https://x.com/flipkart"><img src="twitter.png" alt="instagram logo" width="30px" height="30px"></a>
+
+      </section>
+        
+      <!-- footer ends here.. -->
+
+</body>
+
+</html>
