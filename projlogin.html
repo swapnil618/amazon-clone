@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projlogin |</title>
+    <style>
+   body{
+   background-color: rgb(38, 38, 248) ;
+   
+     }
+     img{
+        padding-left: 200px ;
+        padding-top: 200px;
+         transition: transform 2s ease-in-out; 
+        
+        
+        
+
+     }
+
+   
+
+     img:hover{
+         transform:scale(2);
+     }
+     
+      
+
+     h1,h5{
+        padding-left: 200px;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 2px 2px 2px black;
+        
+     }
+     span{
+        color: rgb(243, 243, 79);
+     }
+     div.login-container{
+        text-align:center;
+        padding-left: 300px;
+         text-shadow: 2px 2px 2px black; 
+         margin-top: -260px;
+       
+        
+       
+     }
+     h2,h6{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 2px 2px 2px black;
+     }
+    .input-group{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           font-size: 20px;
+           text-align: left;
+           padding-left: 400px;
+           font-weight: bolder;
+            
+    }
+
+    button{
+        background-color:yellow;
+        border-radius: 10px;
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+       
+    }
+    h1{     animation-name: swap;
+             position: relative;
+             animation-duration: 5s;
+             animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+             animation-direction: alternate;
+        }
+        @keyframes swap{
+            from{color: white;}
+            to{color: rgb(10, 10, 10);}
+        }
+        .input-group input[type="text"],
+        .input-group input[type="password"] {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        box-sizing: border-box; 
+    }
+        
+    </style>
+    
+</head>
+<body>
+    <div>
+            <img src="flipkart-icon.webp" alt="flipkart logo" width="100px" height="100px">
+            <h1>Flipkart</h1>
+            <h5>ab har <span>wish hogi</span> puri</h5>
+    </div>
+
+    <div class="login-container">
+        <form action="flipkartproject.html" autocomplete="off">
+            <h2>Login to Flipkart</h2> 
+            <h6>Get access to your wishlist,orders and recomendations.</h6>
+            <div class="input-group">
+                <span><label for="username">Username/Mob.No -</label></span>
+                <br><br>
+                <input type="text" id="username" name="username" required placeholder="Username/Mob.No.">
+            </div>
+            <br><br>
+            <div class="input-group">
+               <span><label for="password">Password -</label><span>
+                <br><br>
+                <input type="password" id="password" name="password" required placeholder="xyz@12">
+            </div><br><br>
+            <button type="submit">Login</button>
+            <button type="reset">Reset*</button>
+        </form>
+    </div>
+        
+    
+</body>
+</html>
