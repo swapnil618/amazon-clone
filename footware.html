@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footware |</title>
+    <style>
+        body{
+            background-color: rgb(235, 235, 68);
+            text-align: center;
+        }
+        h1{
+            background-color: rgb(67, 67, 245);
+            animation-name: swap;
+            position: relative;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:forwards;
+            animation-delay: 2s;
+            animation-direction: alternate;
+        }
+        @keyframes swap{
+            from{color: white;}
+            to{color: rgb(243,199,5);}
+        }
+       .item-container{
+       display: flex;
+       justify-content: space-around;
+
+       }
+       .item-container img {
+            height: 550px;
+            width: 300px;
+            margin: 10px; 
+        }
+
+        footer {
+      background-color: #212121;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+      color: rgb(23, 24, 24);
+    }
+
+    footer a {
+      text-decoration: none;
+      display: block;
+      margin: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: antiquewhite;
+
+
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding-top: 10;
+      margin: 10px;
+      text-align: center;
+      color: rgb(245, 229, 6);
+      font-weight: 600;
+
+    }
+
+    footer ul:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      color: white;
+      font-weight: 500;
+      padding-top: 70px;
+      text-align: center;
+    }
+
+    section {
+      background-color: #212121;
+      color: white;
+      font-size: larger;
+      display: flex;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    section img {
+      margin: 0 6px;
+
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Flipkart footware</h1>
+    <div class="item-container">
+    <a href="nikeshoes.html"><img src="nikeshoes.webp" alt="nikeshoes" height="550px" width="300px"></a>
+    <a href="pumashoes.html"><img src="pumashoe.png" alt="nikeshoes" height="550px" width="300px"></a>
+    <a href="formalshoes.html"><img src="formalshoes.jpg" alt="nikeshoes" height="550px" width="300px"></a>
+   <a href="crocs.html"> <img src="crocs.webp" alt="nikeshoes" height="550px" width="300px"></a>
+   
+
+</div>
+</body>
+</html>
